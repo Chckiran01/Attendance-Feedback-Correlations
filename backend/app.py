@@ -11,7 +11,7 @@ import hashlib
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 try:
-    from analysis import *
+    from backend.analysis import *
 except ImportError as e:
     print(f"Error importing analysis module: {e}")
     # minimal dummy fallbacks (keeps app running)
