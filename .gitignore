@@ -1,0 +1,48 @@
+# ======================
+# Python Cache & Temp Files
+# ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ======================
+# Data Folders
+# ======================
+
+# Keep default data, ignore uploaded datasets
+!backend/data/default/data.csv
+backend/data/uploaded/
+
+# Ignore all other data except datasets.json
+backend/data/*
+!backend/data/default/
+!backend/data/datasets.json
+
+# ======================
+# Virtual Environments & Configs
+# ======================
+venv/
+.env
+*.env
+
+# ======================
+# Logs & Temporary Files
+# ======================
+*.log
+tmp/
+cache/
+*.tmp
+
+# ======================
+# IDE / OS Files
+# ======================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ======================
+# Railway Build Files
+# ======================
+__pycache__/
