@@ -741,8 +741,8 @@
     </button>
     
 <!-- In the sidebar section, replace all the onclick handlers -->
-<div class="sidebar-content">
-  <h2>📊 Dashboard</h2>
+    <div class="sidebar-content">
+    <h2>📊 Dashboard</h2>
   <a href="#" class="nav-link {% if plots.active_section == 'univariate' %}active{% endif %}" onclick="switchSection('univariate', event)">
     <i class="fas fa-chart-bar"></i>
     <span>Univariate Analysis</span>
@@ -1045,7 +1045,7 @@
           {% endfor %}
         </div>
 
-        <!-- Attendance Insights (if available) -->
+        <!-- Attendance Insights -->
         {% if current_dataset == 'default' and plots.attendance_insights %}
           <div class="insights-section lazy-loaded">
             <div class="insights-content">
@@ -1254,7 +1254,7 @@
           {% endfor %}
         </div>
 
-        <!-- Correlation Insights (if available) -->
+        <!-- Correlation Insights -->
         {% if current_dataset == 'default' and plots.correlation_insights %}
           <div class="insights-section lazy-loaded">
             <div class="insights-content">

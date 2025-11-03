@@ -391,7 +391,7 @@ def login():
             session.update({'user_type': 'admin', 'username': username})
             flash('Admin logged in successfully.', 'success')
             return redirect(url_for('dashboard'))
-            
+ 
         elif user_type == 'student':
             all_creds = app.config.get('all_student_credentials', {})
             student_info = all_creds.get(username)
